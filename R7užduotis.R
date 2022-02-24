@@ -10,5 +10,5 @@ dataB
 data=merge(dataA,dataB,by=c("year","country","gdppc","unemp","export","import"))
 ## Su rbind() funckija sujungiame duomenų failų eilutes
 data=rbind(dataA,dataB)
-## Prilyginam total kintamajį į data kintamajį ir iškviečiam mūsų sujungtą ir naują duomenų failą
+## Išsikviečiam mūsų sujungtą ir naują duomenų failą
 data
