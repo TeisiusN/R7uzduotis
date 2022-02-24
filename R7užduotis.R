@@ -6,10 +6,9 @@ dataA
 dataB=read.csv("data9013.csv")
 dataB
 ## Pasinaudodami merge() funkciją sujungiam du duomenų failus pagal jų kintamuosius (susidaro stulpeliai)
-## Priskiriam pvz. kintamajam total
-total=merge(dataA,dataB,by=c("year","country","gdppc","unemp","export","import"))
-## Su rbind() funckija sujungiame eilutes
-total=rbind(dataA,dataB)
+## Priskiriam pvz. kintamajam data
+data=merge(dataA,dataB,by=c("year","country","gdppc","unemp","export","import"))
+## Su rbind() funckija sujungiame duomenų failų eilutes
+data=rbind(dataA,dataB)
 ## Prilyginam total kintamajį į data kintamajį ir iškviečiam mūsų sujungtą ir naują duomenų failą
-total=data
 data
